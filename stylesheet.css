@@ -1,0 +1,476 @@
+/*---------------------
+Pengaturan style keseluruhan
+ -----------------------*/
+html, body {
+    height: 100%;
+	font-family: "Montserrat", sans-serif;
+}
+
+/* Bagian Awal Style Header
+=========================*/
+
+/*---------------------
+Pengaturan style bagian header
+ -----------------------*/
+header {
+	padding-left: 55px;
+	padding-right: 72px;
+    background-color: #08192d;
+}
+
+.header-right {
+	float: right;
+	padding: 44px 0;
+    margin-left: 130px;
+}
+
+/*------------------------------------
+Mengubah warna "help" menjadi abu-abu
+ -------------------------------------*/
+.header-right .hr-btn {
+	display: inline-block;
+	color: #979aa5;
+}
+
+/*---------------------------------------------------------
+Mengatur posisi menu login dan create account dalam 1 baris
+ ----------------------------------------------------------*/
+.header-right .user-panel {
+	display: inline-block;
+}
+
+.header-right .user-panel a {
+	font-size: 16px;
+	color: #ffffff;
+	margin: 0 10px;
+}
+
+.header-right .user-panel .register {
+	color: #fc0254;
+	margin-right: 0;
+}
+
+/*----------------------------------------------------
+Pengaturan jarak menu "Help" dengan "Login" & register
+ -----------------------------------------------------*/
+.header-right span {
+	color: #fff;
+	display: inline-block;
+	padding-left: 9px;
+}
+
+/*--------------------------------------------------------
+Pengaturan style menu home, about, pages, news dan contact
+ ---------------------------------------------------------*/
+.main-menu li {
+	display: inline-block;
+	position: relative;
+}
+
+.main-menu li a {
+	display: block;
+	font-size: 16px;
+	color: #ffffff;
+	padding: 44px 10px;
+	margin-left: 60px;
+}
+
+.main-menu li a:hover {
+	color: #fc0254;
+}
+
+.main-menu li:first-child a {
+	margin-left: 0;
+}
+
+/*----------------------------------------------------
+Pengaturan style menu "pages" ketika cursor diarahkan,
+maka sub menu pages akan muncul
+ -----------------------------------------------------*/
+.main-menu li:hover .sub-menu {
+	visibility: visible;
+	opacity: 1;
+	margin-top: 0;
+}
+
+.main-menu .sub-menu {
+	position: absolute;
+	list-style: none;
+	width: 220px;
+	left: 60px;
+	top: 100%;
+	padding: 20px 0;
+	visibility: hidden;
+	opacity: 0;
+	margin-top: 50px;
+	background: #fff;
+	transition: all 0.5s;
+	box-shadow: 2px 7px 20px rgba(0, 0, 0, 0.05);
+}
+
+.main-menu .sub-menu li {
+	display: block;
+}
+
+.main-menu .sub-menu li a {
+	display: block;
+	color: #000;
+	margin-left: 0;
+	padding: 5px 20px;
+}
+
+.main-menu .sub-menu li a:hover {
+	color: #fc0254;
+}
+/* Bagian Akhir Style Header
+=========================*/
+
+/* Bagian Awal Style Main Section
+=========================*/
+.main-section {
+	overflow: hidden;
+}
+.main-item {
+	height: 600px;
+	padding-bottom: 90px;
+	display: flex;
+	align-items: center;
+	background: #0a183d;
+}
+
+.main-left {
+    float: left;
+    padding-left: 50px;
+    max-width: 475px;
+}
+
+.main-left h2 {
+	color: #fc0254;
+	font-size: 70px;
+	margin-bottom: 25px;
+	line-height: 0.9;
+	position: relative;
+	top: 50px;
+	opacity: 10;
+}
+
+.main-left h2 span {
+	color: #fff;
+}
+
+.main-left p {
+	color: #ffffff;
+	opacity: 0.6;
+	margin-bottom: 50px;
+	position: relative;
+	top: 50px;
+	opacity: 10;
+}
+
+.main-item .btn {
+	position: relative;
+	top: 50px;
+	margin-bottom: 20px;
+	opacity: 10;
+}
+
+.main-right {
+    float: right;
+}
+
+.main-right img {
+    width: 100%;
+    height: 100%;
+	top: 50px;
+	opacity: 10;
+}
+/* Bagian Akhir Style Main Section
+=========================*/
+
+/* Bagian Awal Style Second Section
+=========================*/
+.second-section {
+    height: 300px;
+    padding-top: 105px;
+    padding-bottom: 105px;
+}
+
+.second-left {
+    float: left;
+    padding-left: 50px;
+    display: block;
+}
+
+.second-title h2 {
+    font-size: 60px;
+    max-width: 500px;
+    padding-left: 50px;
+}
+
+.second-right p {
+	margin-bottom: 35px;
+    padding-top: 10px;
+}
+
+.second-right {
+    float: right;
+    padding-right: 50px;
+    max-width: 450px;
+}
+/* Bagian Akhir Style Second Section
+=========================*/
+
+/* Bagian Awal Style Team Section
+=========================*/
+/*---------------------
+Pengaturan style bagian Anggota Tim
+ -----------------------*/
+.team-wrapper {
+	padding-bottom: 90px;
+    align-items: center;
+    text-align: left;
+	background: #fff;
+}
+
+.team-section h2 {
+  font-size: 60px;
+  max-width: 700px;
+  padding-left: 50px;
+}
+
+.team-section h2 span {
+    font-size: 60px;
+    color: red;
+}
+
+/* Mengubah susunan foto anggota tim menjadi 1 baris */
+.team {
+    float: left;
+    width:20%; /*Karena terdiri dari 5 orang, maka lebar antar foto anggota tim (100% : 5 orang) = 20%*/
+}
+
+.team-icon {
+    position: relative;
+}
+
+/*Memberikan efek hover pada foto tim, sehingga jika kursor diarahkan ke foto, warna foto akan berubah*/
+.team-icon:hover {
+    background-color:#bdc3c7;
+}
+
+/*Nama masing - masing anggota tim*/
+.team-icon p {
+    position: absolute;
+    top: 95%; /*Letak nama berada di 90% dari atas gambar*/
+    width: 100%;
+    color: #0a183d;
+    font-weight: 600;
+    line-height: 1;
+}
+
+/*Nama kota asal masing - masing anggota tim*/
+.team-contents {
+    width: 80%;
+    display: inline-block;
+    margin-top: 20px; /*jarak bagian atas nama kota asal dengan gambar*/
+    font-size: 15px;
+    color: #6a7080;
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+/*Mengatur ukuran foto tiap personil*/
+img {
+    width: 180px;
+    height: 200px;
+}
+
+/* Bagian Awal Style Tombol
+=========================*/
+.btn {
+	display: inline-block;
+	border: none;
+	font-size: 14px;
+	font-weight: 500;
+	min-width: 195px;
+	padding: 23px 20px;
+	border-radius: 50px;
+	text-transform: uppercase;
+	background: #fc0254;
+	color: #fff;
+	line-height: normal;
+	cursor: pointer;
+	text-align: center;
+}
+
+.btn:hover {
+	color: #fff;
+}
+
+.trial {
+	background: #383b70;
+}
+/* Bagian Akhir Style Tombol
+=========================*/
+
+/*---------------------
+Pengaturan style untuk heading
+ -----------------------*/
+h1, h2 {
+	margin: 0;
+	color: #0a183d;
+	font-weight: 600;
+	line-height: 1;
+}
+
+h1 {
+	font-size: 70px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+/*---------------------
+Pengaturan Style Paragraf
+ -----------------------*/
+p {
+	font-size: 15px;
+	color: #6a7080;
+	line-height: 1.8;
+	font-weight: 500;
+}
+
+img {
+	max-width: 100%;
+}
+
+/*---------------------
+Pengaturan style anchor tag
+ -----------------------*/
+a:hover {
+	text-decoration: none;
+    outline: none;
+}
+
+/*---------------------
+Pengaturan style list
+ -----------------------*/
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+li, a {
+	color: #fff;
+}
+
+/*---------------------
+Pengaturan style pada setiap judul per bagian
+ -----------------------*/
+.section-title {
+	margin-bottom: 60px;
+}
+
+.section-title h2 {
+	font-size: 60px;
+}
+
+/* Bagian Awal Style Form
+=========================*/
+.contact-form {
+    padding-top: 100px;
+    margin-top: 200px;
+    text-align: center;
+  }
+  
+  .contact-form h3{
+    font-size: 30px;
+  }
+  
+  input, textarea {
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 20px 10px;
+    font-size: 18px;
+    border: 1px solid #dee7ec;
+  }
+  
+  .contact-submit {
+    background-color: green;
+    padding: 15px 40px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 7px black;
+  }
+  
+  .contact-submit:hover {
+    opacity: 1;
+  }
+  
+  .contact-submit:active {
+    position: relative;
+    background-color: black;
+    top: 7px;
+    box-shadow: none;
+  }
+/* Bagian Akhir Style Form
+=========================*/
+
+/* Bagian Awal Style Footer
+=========================*/
+footer {
+    background-color: #0a183d;
+  }
+
+  .block {
+    display: inline-block;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+  .kiri {
+    color: white;
+    margin-left: 90px;
+    margin-right: 40px;
+  }
+  .kanan {
+    color: white;
+    font-family: system-ui;
+  }
+  .block li {
+    list-style-type: none;
+  }
+  .kanan ul {
+          display: inline-block;
+  }
+  .list-kiri li {
+    display: inline-block;
+    padding-right: 35px;
+  }
+  .list-title {
+    padding-bottom: 15px;
+  }
+  .kiri span {
+    color: #ff1a8c;
+  }
+  .kiri p {
+    font-size: 15px;
+    font-family: "Gill Sans", sans-serif;
+  }
+  .title {
+    font-size: 22px;
+  }
+
+  .kanan span {
+    padding-left: 15px;
+  }
+
+  .kanan li {
+    padding-bottom: 10px;
+  }
+  /* Bagian Akhir Style Footer
+=========================*/

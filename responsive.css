@@ -1,0 +1,33 @@
+/* Untuk Tablet */
+@media all and (max-width: 1000px) {
+  .main-item {
+    height: 600px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    display: flex;
+    align-items: center;
+    background: #0a183d;
+  }
+
+  /*Mengubah ukuran anggota tim menjadi 33%, sehingga dalam 1 baris terdiri dari 3 foto anggota*/
+    .team {
+      width: 33%;
+      margin-bottom: 50px;
+    }
+
+    .contact-form {
+      padding-top: 100px;
+      margin-top: 200px;
+      position: relative;
+    }
+
+}
+
+/* Untuk Smartphone */
+@media all and (max-width: 670px) {
+    /*Mengubah ukuran anggota tim menjadi 100%, sehingga dalam 1 baris terdiri dari 1 foto anggota*/
+    .team {
+      width: 100%;
+    }
+
+}
